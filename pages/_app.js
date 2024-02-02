@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
     typeof window !== "undefined"
       ? JSON.parse(localStorage.getItem("carrito")) ?? []
       : [];
-  const [carrito, setCarrito] = useState([carritoLS]);
+  const [carrito, setCarrito] = useState(carritoLS);
   const [paginaLista, setPaginaLista] = useState(false);
 
   useEffect(() => {
